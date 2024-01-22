@@ -83,6 +83,10 @@ const reset = () => {
   currentTask = {};
 };
 
+if (taskData.length) {
+  updateTaskContainer();
+}
+
 openTaskFormBtn.addEventListener('click', () =>
   taskForm.classList.toggle('hidden')
 );
